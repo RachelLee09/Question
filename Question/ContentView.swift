@@ -9,13 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack{
+            VStack{
+                Text("welcome to rachel's very intuitive (very subtle not obvious) quiz determining your mbti 🤓")
+                    .multilineTextAlignment(.center)
+                Text("")
+                NavigationLink(destination: FirstQuestion()){
+                    Text("Click to begin quiz.")
+                }
+            }
+            .padding(.all)
         }
-        .padding()
     }
 }
 
